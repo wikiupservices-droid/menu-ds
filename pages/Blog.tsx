@@ -152,23 +152,43 @@ const POSTS: BlogPost[] = [
     readTime: '7 min read',
     image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80',
     content: `
-      <p class="lead text-xl text-gray-600 mb-8">Your menu is your primary sales tool. It's the one piece of advertising that 100% of your guests will read.</p>
+      <p class="lead text-xl text-gray-600 mb-8">Your menu is your primary sales tool. It's the one piece of advertising that 100% of your guests will read. Yet, many restaurants treat it as a simple list of items and prices. This is a mistake.</p>
+
       <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">The Psychology of Menu Engineering</h2>
-      <p class="mb-6">Menu engineering is the study of how the design and organization of a menu influences what customers order.</p>
+      <p class="mb-6">Menu engineering is the study of how the design and organization of a menu influences what customers order. By applying a few psychological tricks, you can steer customers toward your most profitable dishes.</p>
+
       <div class="space-y-8 mt-8">
         <div class="border-l-4 border-brand-accent pl-6">
           <h3 class="text-2xl font-bold text-gray-800 mb-2">1. The Golden Triangle</h3>
-          <p class="text-gray-700">Eye-tracking studies show eyes move to the <strong>Middle</strong>, then <strong>Top Right</strong>, then <strong>Top Left</strong>.</p>
+          <p class="text-gray-700">Eye-tracking studies show eyes move to the <strong>Middle</strong>, then <strong>Top Right</strong>, then <strong>Top Left</strong>. This is where your highest margin items (like your signature steak or seafood platter) should live.</p>
         </div>
-        <div class="border-l-4 border-gray-300 pl-6">
+
+        <div class="border-l-4 border-gray-300 pl-6 hover:border-brand-accent transition-colors">
           <h3 class="text-2xl font-bold text-gray-800 mb-2">2. Remove Currency Signs</h3>
-          <p class="text-gray-700">Seeing a dollar sign ($) reminds customers of the "pain of paying."</p>
+          <p class="text-gray-700">Seeing a dollar sign ($) reminds customers of the "pain of paying." Research shows guests spend more when you just use numbers (e.g., "14" instead of "$14.00").</p>
+        </div>
+
+        <div class="border-l-4 border-gray-300 pl-6 hover:border-brand-accent transition-colors">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">3. Decoy Pricing (Anchoring)</h3>
+          <p class="text-gray-700">Place a $45 surf-and-turf next to a $25 steak. The $25 steak suddenly looks like a bargain, increasing its sales volume.</p>
+        </div>
+
+        <div class="border-l-4 border-gray-300 pl-6 hover:border-brand-accent transition-colors">
+          <h3 class="text-2xl font-bold text-gray-800 mb-2">4. The Paradox of Choice</h3>
+          <p class="text-gray-700">Too many options cause anxiety. Limit each section (Appetizers, Mains) to 7 items or fewer to prevent "analysis paralysis."</p>
         </div>
       </div>
+
+      <h3 class="text-2xl font-bold text-gray-800 mt-12 mb-4">Visual Hierarchy & Language</h3>
+      <p class="mb-4 text-gray-700">Use boxes, shading, or negative space to highlight specific items. But be careful: if everything is highlighted, nothing is.</p>
+      <p class="mb-8 text-gray-700"><strong>Descriptive Language:</strong> Don't just write "Cheeseburger." Write "Grass-fed beef patty with aged cheddar and house-made aioli." This can increase sales by 27%.</p>
+
       <div class="bg-indigo-50 p-8 rounded-xl mt-12 border border-indigo-100">
         <h4 class="text-xl font-bold text-brand-dark mb-3">Get a head start</h4>
-        <p class="mb-6 text-gray-600">Don't start from scratch. Our Etsy shop features scientifically designed menu templates.</p>
-        <a href="https://menuds.etsy.com" target="_blank" class="inline-flex items-center justify-center bg-brand-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-accentHover transition-colors">Shop Templates</a>
+        <p class="mb-6 text-gray-600">Don't start from scratch. Our Etsy shop features scientifically designed menu templates that follow these exact principles.</p>
+        <a href="https://menuds.etsy.com" target="_blank" class="inline-flex items-center justify-center bg-brand-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-accentHover transition-colors shadow-lg shadow-orange-500/30">
+          Shop Menu Templates
+        </a>
       </div>
     `
   },
@@ -180,7 +200,46 @@ const POSTS: BlogPost[] = [
     date: 'Oct 11, 2023',
     readTime: '8 min read',
     image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80',
-    content: ''
+    content: `
+      <p class="lead text-xl text-gray-600 mb-8">Menu engineering is the science of optimizing your menu to maximize profit. It involves analyzing every dish based on two criteria: popularity and profitability.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">The Menu Matrix</h2>
+      <p class="mb-6">To start, you need to export your sales data and food costs. Imagine a graph where the X-axis is <strong>Profitability</strong> (High vs. Low Contribution Margin) and the Y-axis is <strong>Popularity</strong> (High vs. Low Sales Volume). This creates four categories of dishes:</p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-12">
+        <div class="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+          <h3 class="text-xl font-bold text-yellow-800 mb-2">★ Stars</h3>
+          <p class="text-sm font-bold uppercase text-yellow-600 mb-2">High Profit / High Popularity</p>
+          <p class="text-gray-700">These are your best dishes. Do not touch the recipe. Promote them heavily on your digital boards and social media. They are the backbone of your business.</p>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+          <h3 class="text-xl font-bold text-blue-800 mb-2">♞ Plowhorses</h3>
+          <p class="text-sm font-bold uppercase text-blue-600 mb-2">Low Profit / High Popularity</p>
+          <p class="text-gray-700">Customers love these, but they don't make you much money (e.g., a steak with a high food cost). Try to increase the price slightly or reduce the portion size to improve margin.</p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
+          <h3 class="text-xl font-bold text-purple-800 mb-2">? Puzzles</h3>
+          <p class="text-sm font-bold uppercase text-purple-600 mb-2">High Profit / Low Popularity</p>
+          <p class="text-gray-700">These make great money but nobody orders them. They need better marketing. Rename them, take a better photo, or move them to the "Sweet Spot" on your menu.</p>
+        </div>
+        <div class="bg-red-50 p-6 rounded-lg border border-red-200">
+          <h3 class="text-xl font-bold text-red-800 mb-2">🐕 Dogs</h3>
+          <p class="text-sm font-bold uppercase text-red-600 mb-2">Low Profit / Low Popularity</p>
+          <p class="text-gray-700">They crowd your kitchen, waste inventory, and confuse customers. Remove them from the menu immediately.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">How to Apply This to Digital Menus</h2>
+      <p class="mb-6">Once you have categorized your dishes, use your digital menu board to execute your strategy.</p>
+      <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-700">
+        <li><strong>Highlight Stars:</strong> Use the largest images and animations for your Star items.</li>
+        <li><strong>Fix Puzzles:</strong> Run a "Chef's Special" promotion on your screens for a Puzzle item to see if visibility improves sales.</li>
+        <li><strong>Hide Dogs:</strong> With digital menus, you can delete a Dog item instantly. You don't have to wait for a reprint.</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Conclusion</h2>
+      <p class="mb-6">Menu engineering is not a one-time task. It is a continuous cycle of analyzing, adjusting, and testing. Digital tools make this process fast and effective.</p>
+    `
   },
   {
     id: 'dux-3',
@@ -253,8 +312,11 @@ const POSTS: BlogPost[] = [
     readTime: '10 min read',
     image: 'https://images.unsplash.com/photo-1554224155-6d2650eb6db7?auto=format&fit=crop&w=1200&q=80',
     content: `
-      <p class="lead text-xl text-gray-600 mb-8">Running a restaurant is a game of pennies. With tight margins and high competition, "going with your gut" is no longer a viable strategy.</p>
+      <p class="lead text-xl text-gray-600 mb-8">Running a restaurant is a game of pennies. With tight margins and high competition, "going with your gut" is no longer a viable strategy. Successful restaurateurs are data-driven. They know their numbers inside and out.</p>
+
       <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Revenue is Vanity, Profit is Sanity</h2>
+      <p class="mb-6">It’s easy to get excited about a busy Friday night, but if your costs are out of control, that revenue means nothing. Here are the essential Key Performance Indicators (KPIs) you need to track every single day.</p>
+
       <div class="grid md:grid-cols-2 gap-6 my-8">
         <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
            <h3 class="text-xl font-bold text-brand-accent mb-2">1. Prime Cost</h3>
@@ -264,12 +326,38 @@ const POSTS: BlogPost[] = [
         <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
            <h3 class="text-xl font-bold text-brand-accent mb-2">2. CoGS</h3>
            <p class="text-gray-700"><strong>Formula:</strong> Beginning Inventory + Purchases - Ending Inventory</p>
+           <p class="text-sm text-gray-500 mt-2">Watch for waste and theft.</p>
         </div>
       </div>
+
+      <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Other Critical Metrics</h3>
+      <ol class="list-decimal pl-6 space-y-6 mb-8 text-gray-700">
+        <li>
+          <strong>Labor Cost Percentage:</strong> Labor is often your biggest controllable expense. Track your labor as a percentage of sales. If your target is 25% and you're running at 35% on a slow Tuesday, send staff home early.
+        </li>
+        <li>
+          <strong>RevPASH (Revenue Per Available Seat Hour):</strong> Calculated by dividing revenue by seat hours. Improving this might mean turning tables faster or optimizing your floor plan.
+        </li>
+        <li>
+          <strong>Table Turnover Rate:</strong> How quickly can you serve a party, clean the table, and seat the next one? Increasing turnover by 10 minutes can add an entire seating cycle.
+        </li>
+        <li>
+          <strong>Average Ticket Size:</strong> How much does the average guest spend? If this drops, train staff on upselling or redesign your menu.
+        </li>
+        <li>
+          <strong>Employee Turnover Rate:</strong> High turnover is a sign of poor management or culture. Hiring is expensive; retention is profitable.
+        </li>
+      </ol>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">How to Track Without Stress</h2>
+      <p class="mb-6">You don't need a degree in accounting. Modern POS systems calculate many of these numbers automatically. The key is consistency. Look at your reports every morning with your coffee.</p>
+
       <div class="bg-gray-800 text-white p-8 rounded-xl mt-12">
         <h4 class="text-xl font-bold mb-3">Need better tools?</h4>
         <p class="mb-6 text-gray-300">We are building a simple, affordable Restaurant OS to help you track these metrics effortlessly.</p>
-        <button class="bg-brand-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-accentHover transition-colors" onclick="window.location.hash = 'app'">Join Waitlist</button>
+        <button class="bg-brand-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-accentHover transition-colors" onclick="window.location.hash = 'app'">
+          Join Waitlist
+        </button>
       </div>
     `
   },
@@ -428,7 +516,30 @@ const POSTS: BlogPost[] = [
     date: 'Sep 24, 2023',
     readTime: '4 min read',
     image: 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=1200&q=80',
-    content: ''
+    content: `
+      <p class="lead text-xl text-gray-600 mb-8">Static printed menus limit your marketing creativity. You can't print a new flyer every time it rains or whenever you have too much salmon in the fridge. With digital menu boards, you can run dynamic, time-sensitive offers that drive urgency and increase ticket size instantly.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">1. The "Flash Sale" (Happy Hour)</h2>
+      <p class="mb-6">Create a screen that automatically triggers at 4:00 PM. "Half-price appetizers until 6:00 PM." The visual change in the room signals to guests that it's time to order. Digital menus allow you to automate this so you never forget to put the sign out.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-6">2. The "Rainy Day" Comfort</h2>
+      <p class="mb-6">Is it pouring rain outside? Switch your featured image to a steaming bowl of hot soup or a warm coffee. Match the offer to the customer's current mood. This emotional connection increases conversion rates significantly.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-6">3. The Inventory Cleaner</h2>
+      <p class="mb-6">Have too much fish that needs to be sold before the weekend? Create a "Chef's Special" graphic and push it to all screens immediately. Run a 20% discount to move the product quickly and recover costs instead of throwing it away.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-6">4. The "Combo Upgrade"</h2>
+      <p class="mb-6">Instead of just listing a burger, show a high-res video of the burger <em>with</em> fries and a shake. "Add a shake for just $2." Visual suggestions work better than verbal upsells because they stimulate appetite directly.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-6">5. Limited Time Offers (LTOs)</h2>
+      <p class="mb-6">Create scarcity. "Available only this October." Pumpkin spice lattes are the classic example. Use LTOs to test new concepts without committing to a permanent menu change. If it sells well, keep it. If not, delete the slide.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-6">6. The "Social Proof" Highlight</h2>
+      <p class="mb-6">Add a "Best Seller" or "Local Favorite" badge to your most profitable dishes. New customers often suffer from decision paralysis; help them choose what makes you money. Digital stickers can be added or removed in seconds.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-8 mb-6">7. QR Code Exclusives</h2>
+      <p class="mb-6">Display a large QR code on the screen: "Scan to join our VIP club and get a free dessert right now." This builds your email list for future marketing, turning a one-time guest into a repeat customer.</p>
+    `
   },
   {
     id: 'mkt-3',
@@ -471,24 +582,60 @@ const POSTS: BlogPost[] = [
     readTime: '6 min read',
     image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?auto=format&fit=crop&w=1200&q=80',
     content: `
-      <p class="lead text-xl text-gray-600 mb-8">The sound of a ticket printer is the heartbeat of a traditional kitchen. But what happens when the printer jams? Enter the <strong>Kitchen Display System (KDS)</strong>.</p>
+      <p class="lead text-xl text-gray-600 mb-8">The sound of a ticket printer is the heartbeat of a traditional kitchen. But what happens when the printer jams? Or a ticket falls on the greasy floor? Or the chef simply can't read the server's handwriting? Enter the <strong>Kitchen Display System (KDS)</strong>.</p>
+
       <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">What is a KDS?</h2>
-      <p class="mb-6">A KDS is a digital screen placed in the kitchen that replaces paper tickets. It connects directly to your POS system.</p>
-      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Top Benefits of a KDS</h2>
+      <p class="mb-6">A KDS is a digital screen (usually a tablet or monitor) placed in the kitchen that replaces paper tickets. It connects directly to your POS system. When a server enters an order, it appears instantly on the KDS.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Top 5 Benefits of a KDS</h2>
+      
       <div class="space-y-6 mb-12">
         <div class="flex items-start">
           <div class="flex-shrink-0 h-8 w-8 rounded-full bg-brand-accent text-white flex items-center justify-center font-bold">1</div>
-          <div class="ml-4"><h4 class="text-lg font-bold text-gray-900">Accuracy and Clarity</h4><p class="text-gray-600">No more deciphering handwriting.</p></div>
+          <div class="ml-4">
+            <h4 class="text-lg font-bold text-gray-900">Accuracy and Clarity</h4>
+            <p class="text-gray-600">No more deciphering handwriting. Modifications (like "No Onions") are highlighted in bold colors so they can't be missed.</p>
+          </div>
         </div>
         <div class="flex items-start">
           <div class="flex-shrink-0 h-8 w-8 rounded-full bg-brand-accent text-white flex items-center justify-center font-bold">2</div>
-          <div class="ml-4"><h4 class="text-lg font-bold text-gray-900">Timing Management</h4><p class="text-gray-600">Tickets change color as time passes.</p></div>
+          <div class="ml-4">
+            <h4 class="text-lg font-bold text-gray-900">Timing Management</h4>
+            <p class="text-gray-600">Tickets change color from green to red as time passes, alerting the chef to prioritize lagging orders.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-brand-accent text-white flex items-center justify-center font-bold">3</div>
+          <div class="ml-4">
+            <h4 class="text-lg font-bold text-gray-900">Cost Savings</h4>
+            <p class="text-gray-600">Eliminate expensive, non-recyclable thermal paper rolls.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-brand-accent text-white flex items-center justify-center font-bold">4</div>
+          <div class="ml-4">
+            <h4 class="text-lg font-bold text-gray-900">Data and Reporting</h4>
+            <p class="text-gray-600">Track average prep time per dish to identify bottlenecks in your kitchen line.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="flex-shrink-0 h-8 w-8 rounded-full bg-brand-accent text-white flex items-center justify-center font-bold">5</div>
+          <div class="ml-4">
+            <h4 class="text-lg font-bold text-gray-900">Integrated Workflow</h4>
+            <p class="text-gray-600">Notify servers instantly when an order is ready.</p>
+          </div>
         </div>
       </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">The Future of Your Kitchen</h2>
+      <p class="mb-6">Change is scary, but modern KDS interfaces are intuitive. If you want to scale or simply have a peaceful dinner rush, a KDS is not a luxury; it's a necessity.</p>
+      
       <div class="bg-gray-800 text-white p-8 rounded-xl mt-12">
         <h4 class="text-xl font-bold mb-3">Coming Soon: MenuDS Manager</h4>
-        <p class="mb-6 text-gray-300">Our upcoming app includes a built-in KDS.</p>
-        <button class="bg-brand-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-accentHover transition-colors" onclick="window.location.hash = 'app'">Join the Waitlist</button>
+        <p class="mb-6 text-gray-300">Our upcoming app includes a built-in, easy-to-use KDS that runs on affordable Android tablets. Don't miss out.</p>
+        <button class="bg-brand-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-accentHover transition-colors" onclick="window.location.hash = 'app'">
+          Join the Waitlist
+        </button>
       </div>
     `
   },
@@ -500,7 +647,30 @@ const POSTS: BlogPost[] = [
     date: 'Oct 04, 2023',
     readTime: '7 min read',
     image: 'https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=1200&q=80',
-    content: ''
+    content: `
+      <p class="lead text-xl text-gray-600 mb-8">Walk into any busy takeout spot on a Friday night, and you might see the "Tablet Tower"—three or four different tablets for different delivery apps (UberEats, DoorDash, etc.), plus a main POS system. Staff are frantically typing orders from one screen to another.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">The "Tablet Hell" Problem</h2>
+      <p class="mb-6">Disconnection is expensive. If you have three different systems that don't talk to each other, you are prone to error. Staff have to manually re-enter delivery orders into the kitchen printer. This leads to mistakes (forgotten modifiers), kitchen confusion, and incorrect accounting at the end of the night.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">The Solution: Integration</h2>
+      <p class="mb-6">An integrated Restaurant OS aggregates all these channels into one screen. Here is why you need it:</p>
+
+      <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-700">
+        <li><strong>Single Source of Truth:</strong> One menu to manage. Update a price once in your system, and it pushes to your POS, your website, and delivery apps simultaneously.</li>
+        <li><strong>Consolidated Reporting:</strong> See your total revenue in one report, not five different spreadsheets. You need to know your <em>total</em> food cost, not just your dine-in food cost.</li>
+        <li><strong>Inventory Sync:</strong> When you sell a steak on DoorDash, your inventory system should know instantly so you don't oversell it to a walk-in guest later that night.</li>
+        <li><strong>Kitchen Efficiency:</strong> All tickets, regardless of source, print or display on the KDS in a standardized format. No more reading "special instructions" from different receipt layouts.</li>
+      </ul>
+
+      <div class="bg-brand-dark text-white p-8 rounded-xl mt-12">
+        <h4 class="text-xl font-bold mb-3">Stop the chaos.</h4>
+        <p class="mb-6 text-gray-300">MenuDS Manager is being built to solve exactly this problem. Centralize your orders and regain your sanity.</p>
+        <button class="bg-brand-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-accentHover transition-colors" onclick="window.location.hash = 'app'">
+          Join Waitlist
+        </button>
+      </div>
+    `
   },
   {
     id: 'tech-3',
@@ -510,7 +680,28 @@ const POSTS: BlogPost[] = [
     date: 'Sep 30, 2023',
     readTime: '6 min read',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
-    content: ''
+    content: `
+      <p class="lead text-xl text-gray-600 mb-8">Many small restaurant owners start with Excel. It's free, flexible, and familiar. You use it for scheduling, inventory, and maybe even recipe costing. But as you scale, Excel becomes a trap.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">Why Spreadsheets Fail Restaurants</h2>
+      <ul class="list-disc pl-6 space-y-4 mb-8 text-gray-700">
+        <li><strong>They are static:</strong> Excel doesn't know you just sold 50 burgers. It only knows what you manually type in at the end of the week. This means you are always making decisions based on old data.</li>
+        <li><strong>Version Control:</strong> "Inventory_Final_v3_REAL.xlsx". We've all been there. Data gets lost in email threads or overwritten by accident.</li>
+        <li><strong>Human Error:</strong> One broken formula can mess up your food cost calculations for months before you notice.</li>
+      </ul>
+
+      <h2 class="text-3xl font-bold text-gray-900 mt-12 mb-6">The Shift to a Restaurant OS</h2>
+      <p class="mb-6">A Restaurant Operating System (OS) connects the dots. It takes live data from sales and subtracts from inventory in real-time. It uses historical sales data to forecast labor needs for next week.</p>
+
+      <h3 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Steps to Upgrade</h3>
+      <ol class="list-decimal pl-6 space-y-4 mb-8 text-gray-700">
+        <li><strong>Audit Your Data:</strong> Clean up your ingredient lists and recipes before importing them. Garbage in, garbage out.</li>
+        <li><strong>Choose Cloud-Based:</strong> Ensure you can access your data from home, not just the back office computer.</li>
+        <li><strong>Train Your Team:</strong> The system is only as good as the people using it. Make it easy for them to input waste and stock counts.</li>
+      </ol>
+
+      <p class="mb-6">Moving to a professional system isn't just about software; it's about maturing your business mindset from "mom and pop" to a scalable enterprise.</p>
+    `
   },
   {
     id: 'tech-4',
